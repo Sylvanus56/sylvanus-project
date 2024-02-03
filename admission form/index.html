@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="admissionForm" onsubmit="return validateForm()">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+      
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+      
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      
+        <label for="grade">Grade:</label>
+        <select id="grade" name="grade" required>
+          <option value="">--Please select--</option>
+          <option value="Kindergarten">Kindergarten</option>
+          <option value="1st Grade">1st Grade</option>
+          <option value="2nd Grade">2nd Grade</option>
+          <option value="3rd Grade">3rd Grade</option>
+          <option value="4th Grade">4th Grade</option>
+          <option value="5th Grade">5th Grade</option>
+          <option value="6th Grade">6th Grade</option>
+          <option value="7th Grade">7th Grade</option>
+          <option value="8th Grade">8th Grade</option>
+          <option value="9th Grade">9th Grade</option>
+          <option value="10th Grade">10th Grade</option>
+          <option value="11th Grade">11th Grade</option>
+          <option value="12th Grade">12th Grade</option>
+        </select>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      
+        <input type="submit" value="Submit">
+      </form>
+      
+      <script src="script.js"></script>
+</body>
+</html>

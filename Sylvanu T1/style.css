@@ -1,0 +1,105 @@
+:root {
+    --colo-primary: #0073ff;
+    --colo-white: #e9e9e9;
+    --colo-black: #141d28;
+    --colo-black: #141d28;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.manu-bar {
+    background-color: var(--colo-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo {
+    color: var(--colo-white);
+    font-size: 30px;
+}
+
+.logo span {
+    color: var(--colo-primary);
+}
+
+.manu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.manu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.manu-bar ul li a {
+    color: var(--colo-white);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.manu-bar ul li a:hover {
+  color: var(--colo-primary);
+}
+
+.dropdown-manu {
+    display: none;
+}
+
+.manu-bar ul li:hover .dropdown-manu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--colo-black);
+}
+
+.manu-bar ul li:hover .dropdown-manu ul {
+    display: block;
+    margin: 10px;
+}
+
+.manu-bar ul li:hover .dropdown-manu ul li {
+     width: 150px;
+     padding: 10px;
+}
+
+.fas {
+ float: right;
+ margin-left: 10px;
+ padding-top: 3px;
+}
+
+ .dropdown-manu-ul li:hover .dropdown-manu-1 {
+    display: none;
+}
+
+
+ .dropdown-manu-1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: var(--colo-black);
+}
+
+.hero {
+    height: calc(100vh - 80px);
+    background-image: url(./images/william-daigneault-Omlu0KHlUiQ-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
